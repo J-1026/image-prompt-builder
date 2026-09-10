@@ -6,6 +6,8 @@
 
 这是独立制作的 Skill，依据 OpenAI 的图像提示词指南整理，并非 OpenAI 官方出品。当前版本负责提示词，不内置生图服务，不需要提供 API Key。实际生图由你选用的工具完成，其账号和额度另行要求。
 
+**先看效果：[两个完整使用示例](docs/EXAMPLES.md)**——做教程封面、给杯子换颜色。展示用户原话、当次完整输出、自动补充项和下一步操作；改图例子附可下载的输入图。
+
 ## 安装与开始
 
 下载 [最新版本](https://github.com/J-1026/image-prompt-builder/releases/latest) 中的 `image-prompt-builder-v1.0.0.zip`。解压后得到 `image-prompt-builder` 文件夹，内部第一层应直接包含 `SKILL.md`。
@@ -45,13 +47,13 @@ Codex 会发现技能变更；若新增 Skill 没出现，重启 Codex 后再调
 
 ### 2. 复制生成的提示词
 
-例如，假设原图确实包含这些物体，输出可以是：
+以[完整示例中的输入图](docs/EXAMPLES.md)为例，下面是便于阅读的简版；该页保留当次完整输出：
 
 ```text
-编辑上传的原图，将桌上红色杯子的杯身改为蓝色。
+编辑上传的原图，将桌上红色杯子的红色杯身和杯柄改为蓝色。
 保留杯子的外形、白色竖条图案、位置和大小。
 保留桌上的黄色书本以及背景中的圆形装饰。
-保留原图构图，仅允许杯身换色所需的局部明暗变化。
+保留原图构图，仅允许换色所需的边缘融合。
 ```
 
 助手还会给出本次验收要求，例如颜色是否正确、杯身图案是否保留、周围物体是否保留。
@@ -104,6 +106,7 @@ $image-prompt-builder 图1是底图，图2只参考配色，保留图1的人物�
 
 - `skills/image-prompt-builder/`：可安装的 Skill。
 - `docs/VALIDATION.md`：验证方法、结果与限制。
+- `docs/EXAMPLES.md`：用户原话到完成提示词的两个完整示例。
 - `tests/`：公开的自制测试素材与输入。
 
 MIT 许可。提示词整理原则参考 [OpenAI 官方指南](https://developers.openai.com/api/docs/guides/image-prompting?model=gpt-image-2.5)。
