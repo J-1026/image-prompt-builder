@@ -1,0 +1,293 @@
+{
+  "date": "2026-09-10",
+  "method": "制作者按预先保存的检查表人工复核；执行者未读取检查表；单次独立上下文内顺序运行12例。",
+  "checks": [
+    {
+      "case_id": "C01",
+      "criterion_index": 1,
+      "criterion": "保留指定标题的准确文字",
+      "verdict": "pass",
+      "evidence": "标题逐字使用“AI修图小技巧”"
+    },
+    {
+      "case_id": "C01",
+      "criterion_index": 2,
+      "criterion": "保留2:3竖版比例",
+      "verdict": "pass",
+      "evidence": "画面宽高比为2:3"
+    },
+    {
+      "case_id": "C01",
+      "criterion_index": 3,
+      "criterion": "排除其他文字",
+      "verdict": "pass",
+      "evidence": "不添加副标题、编号、说明、品牌、水印或其他文字"
+    },
+    {
+      "case_id": "C01",
+      "criterion_index": 4,
+      "criterion": "输出完成的提示词，不要求用户填写模板",
+      "verdict": "pass",
+      "evidence": "给出完整制作指令，无待填项"
+    },
+    {
+      "case_id": "C02",
+      "criterion_index": 1,
+      "criterion": "实际查看输入图",
+      "verdict": "pass",
+      "evidence": "试用过程查看desk.png，输出也列出实际物体"
+    },
+    {
+      "case_id": "C02",
+      "criterion_index": 2,
+      "criterion": "仅要求将杯身改为蓝色",
+      "verdict": "fail",
+      "evidence": "输出要求杯身和杯柄均换色，超出检查项字面的“仅杯身”；但用户实际要求整个红杯子换色"
+    },
+    {
+      "case_id": "C02",
+      "criterion_index": 3,
+      "criterion": "保留可见的白色竖条特征",
+      "verdict": "pass",
+      "evidence": "保留杯身上的白色竖条"
+    },
+    {
+      "case_id": "C02",
+      "criterion_index": 4,
+      "criterion": "保留背景或周边物体",
+      "verdict": "pass",
+      "evidence": "桌面、浅色背景、书本及圆形装饰均保持原样"
+    },
+    {
+      "case_id": "C03",
+      "criterion_index": 1,
+      "criterion": "实际查看两张输入图",
+      "verdict": "pass",
+      "evidence": "试用过程查看desk.png与palette.png"
+    },
+    {
+      "case_id": "C03",
+      "criterion_index": 2,
+      "criterion": "明确图1为底图且图2仅参考配色",
+      "verdict": "pass",
+      "evidence": "以图1为唯一底图，只参考图2的配色"
+    },
+    {
+      "case_id": "C03",
+      "criterion_index": 3,
+      "criterion": "不引入参考配色图以外的虚构对象",
+      "verdict": "pass",
+      "evidence": "未把色板布局或不存在的主体引入图1"
+    },
+    {
+      "case_id": "C03",
+      "criterion_index": 4,
+      "criterion": "保留图1物体的位置和形状",
+      "verdict": "pass",
+      "evidence": "保留图1全部物体的位置、形状、大小"
+    },
+    {
+      "case_id": "C04",
+      "criterion_index": 1,
+      "criterion": "指出纯红与纯蓝的核心矛盾",
+      "verdict": "pass",
+      "evidence": "同一杯身无法同时完全是纯红色和纯蓝色"
+    },
+    {
+      "case_id": "C04",
+      "criterion_index": 2,
+      "criterion": "不默默替用户选颜色",
+      "verdict": "pass",
+      "evidence": "询问最终红色还是蓝色"
+    },
+    {
+      "case_id": "C04",
+      "criterion_index": 3,
+      "criterion": "不输出自相矛盾且声称可执行的最终指令",
+      "verdict": "pass",
+      "evidence": "未给出伪装为可执行的矛盾提示词"
+    },
+    {
+      "case_id": "C05",
+      "criterion_index": 1,
+      "criterion": "不声称已经看见未提供的照片或具体人物特征",
+      "verdict": "pass",
+      "evidence": "目前没有收到照片"
+    },
+    {
+      "case_id": "C05",
+      "criterion_index": 2,
+      "criterion": "给出不依赖隐藏细节的通用指令或请求必要图片",
+      "verdict": "pass",
+      "evidence": "先给通用编辑指令，实际编辑需上传原图"
+    },
+    {
+      "case_id": "C05",
+      "criterion_index": 3,
+      "criterion": "保留人物与更换咖啡馆背景两个要求",
+      "verdict": "pass",
+      "evidence": "更换咖啡馆背景，同时保留人脸、五官、表情"
+    },
+    {
+      "case_id": "C06",
+      "criterion_index": 1,
+      "criterion": "仅输出提示词，不附解释清单",
+      "verdict": "pass",
+      "evidence": "整个回答只有一个提示词代码块"
+    },
+    {
+      "case_id": "C06",
+      "criterion_index": 2,
+      "criterion": "保留黑白极简月亮主题",
+      "verdict": "pass",
+      "evidence": "黑白极简月亮海报"
+    },
+    {
+      "case_id": "C06",
+      "criterion_index": 3,
+      "criterion": "明确不含文字",
+      "verdict": "pass",
+      "evidence": "不含任何文字、数字、标志或水印"
+    },
+    {
+      "case_id": "C06",
+      "criterion_index": 4,
+      "criterion": "保留正方形画面",
+      "verdict": "pass",
+      "evidence": "正方形"
+    },
+    {
+      "case_id": "C07",
+      "criterion_index": 1,
+      "criterion": "保留换背景、换衣服、夜景全部三个目标",
+      "verdict": "pass",
+      "evidence": "换背景→换衣服→改成夜景"
+    },
+    {
+      "case_id": "C07",
+      "criterion_index": 2,
+      "criterion": "给出可执行的分轮顺序",
+      "verdict": "pass",
+      "evidence": "说明三轮顺序；背景和衣服目标缺失，先询问，并提供第三轮指令"
+    },
+    {
+      "case_id": "C07",
+      "criterion_index": 3,
+      "criterion": "后续轮次保留前轮已完成的变化",
+      "verdict": "pass",
+      "evidence": "第三轮保留已经确认的新背景和新服装"
+    },
+    {
+      "case_id": "C08",
+      "criterion_index": 1,
+      "criterion": "逐字保留SkillGulde，不自动改成SkillGuide",
+      "verdict": "pass",
+      "evidence": "严格使用SkillGulde，并要求不纠正"
+    },
+    {
+      "case_id": "C08",
+      "criterion_index": 2,
+      "criterion": "保留第二行准确文案",
+      "verdict": "pass",
+      "evidence": "从想法到图片"
+    },
+    {
+      "case_id": "C08",
+      "criterion_index": 3,
+      "criterion": "仅输出提示词",
+      "verdict": "pass",
+      "evidence": "整个回答只有一个提示词代码块"
+    },
+    {
+      "case_id": "C09",
+      "criterion_index": 1,
+      "criterion": "实际查看输入图",
+      "verdict": "pass",
+      "evidence": "试用过程查看desk.png"
+    },
+    {
+      "case_id": "C09",
+      "criterion_index": 2,
+      "criterion": "指出杯子尚非蓝色",
+      "verdict": "pass",
+      "evidence": "杯身和杯柄仍然是红色，未通过"
+    },
+    {
+      "case_id": "C09",
+      "criterion_index": 3,
+      "criterion": "未见原始对照时不判定背景保留通过",
+      "verdict": "pass",
+      "evidence": "没有原图与修改结果的对照，无法判断"
+    },
+    {
+      "case_id": "C09",
+      "criterion_index": 4,
+      "criterion": "不伪造已通过的总体图像分数",
+      "verdict": "pass",
+      "evidence": "报告0项可确认通过、1失败和1无法判断，无虚构成功分数"
+    },
+    {
+      "case_id": "C10",
+      "criterion_index": 1,
+      "criterion": "识别移除对象与该区域逐像素不变不相容",
+      "verdict": "pass",
+      "evidence": "移除杯子必然改变杯子所在区域像素"
+    },
+    {
+      "case_id": "C10",
+      "criterion_index": 2,
+      "criterion": "不保证提示词可以满足矛盾条件",
+      "verdict": "pass",
+      "evidence": "没有能保证同时做到的提示词"
+    },
+    {
+      "case_id": "C10",
+      "criterion_index": 3,
+      "criterion": "给出澄清取舍或确定性编辑的可行方向",
+      "verdict": "pass",
+      "evidence": "询问是否允许目标区域变化，说明固定蒙版与最终合成方向"
+    },
+    {
+      "case_id": "C11",
+      "criterion_index": 1,
+      "criterion": "不声称已查看尚未上传的草图",
+      "verdict": "pass",
+      "evidence": "尚未收到草图"
+    },
+    {
+      "case_id": "C11",
+      "criterion_index": 2,
+      "criterion": "保留通用草图转写实任务",
+      "verdict": "pass",
+      "evidence": "给出草图转自然写实室内效果图的通用指令"
+    },
+    {
+      "case_id": "C11",
+      "criterion_index": 3,
+      "criterion": "明确排除箭头和手写注释进入成品",
+      "verdict": "pass",
+      "evidence": "不绘入箭头、辅助框线和手写注释"
+    },
+    {
+      "case_id": "C12",
+      "criterion_index": 1,
+      "criterion": "给出两个实际不同方向",
+      "verdict": "pass",
+      "evidence": "写实静物摄影和平面插画两个方向"
+    },
+    {
+      "case_id": "C12",
+      "criterion_index": 2,
+      "criterion": "两种方向都明确无文字",
+      "verdict": "pass",
+      "evidence": "两个提示词均明确不含文字、数字、标志或水印"
+    },
+    {
+      "case_id": "C12",
+      "criterion_index": 3,
+      "criterion": "不调用生图工具",
+      "verdict": "pass",
+      "evidence": "试用过程无生图调用，仅输出两段提示词"
+    }
+  ]
+}

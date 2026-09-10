@@ -1,0 +1,4 @@
+interface:
+  display_name: "图像提示词助手"
+  short_description: "将口述想法与参考图自动整理成生图、改图提示词，并检查冲突与保留项"
+  default_prompt: "使用 $image-prompt-builder，把我的想法和参考图整理成可直接使用的图像提示词。"
