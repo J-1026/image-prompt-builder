@@ -6,7 +6,9 @@
 
 这是独立制作的 Skill，依据 OpenAI 的图像提示词指南整理，并非 OpenAI 官方出品。当前版本负责提示词，不内置生图服务，不需要提供 API Key。实际生图由你选用的工具完成，其账号和额度另行要求。
 
-**先看效果：[两个完整使用示例](docs/EXAMPLES.md)**——做教程封面、给杯子换颜色。展示用户原话、当次完整输出、自动补充项和下一步操作；改图例子附可下载的输入图。
+**实际图片案例：[8 张图片，两个完整使用路径](docs/GALLERY.md)**——宇航员参考与猴子香蕉多轮修改；酒瓶实拍、产品图与人物场景。附图片顺序、Skill 作用和可复用指令。
+
+**提示词示例：[两个完整使用示例](docs/EXAMPLES.md)**——做教程封面、给杯子换颜色。展示用户原话、当次完整输出、自动补充项和下一步操作；改图例子附可下载的输入图。
 
 ## 安装与开始
 
@@ -119,4 +121,4 @@ v1.0.1 的新增检查见 [局部编辑修订验证](docs/VALIDATION-v1.0.1.md)�
 - `docs/EXAMPLES.md`：用户原话到完成提示词的两个完整示例。
 - `tests/`：公开的自制测试素材与输入。
 
-MIT 许可。提示词整理原则参考 [OpenAI 官方指南](https://developers.openai.com/api/docs/guides/image-prompting?model=gpt-image-2.5)。
+代码与 Skill 文档采用 MIT 许可；案例图片的素材说明见 [案例页](docs/GALLERY.md#素材说明)。提示词整理原则参考 [OpenAI 官方指南](https://developers.openai.com/api/docs/guides/image-prompting?model=gpt-image-2.5)。
